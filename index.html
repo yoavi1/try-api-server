@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get(
+          ' https://my-json-server.typicode.com/yoavi1/try-api-server/posts/1'
+        )
+        .then((response) => {
+          // 4. Handle the response
+          console.log('Response:', response.data); // Output the response data
+        });
+    </script>
+  </body>
+</html>
